@@ -1,0 +1,90 @@
+.AgeGroups {
+  margin: 10px 0 10px 0;
+  margin-bottom: 100px;
+}
+.AgeGroups__heading {
+  width: 100%;
+  max-width: 530px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  color: #22ace3;
+  font-size: 52px;
+  font-family: "PFDinDisplayPro", Arial, sans-serif;
+  line-height: 1.55;
+  font-weight: 600;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+}
+
+.AgeGroups__list {
+  width: 100%;
+  max-width: 1350px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  list-style-type: none;
+  flex-wrap: wrap;
+  padding: 0 30px;
+}
+
+.AgeGroups__list-item {
+  width: 100%;
+  max-width: 300px;
+  padding-bottom: 20px;
+  margin: 0 20px 0 0;
+}
+.AgeGroups__list-item__heading {
+  color: #22ace3;
+  font-size: 28px;
+  font-family: "PFDinDisplayPro", Arial, sans-serif;
+  line-height: 1.55;
+  font-weight: 600;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+}
+.AgeGroups__list-item__order {
+  color: #222020;
+  font-size: 18px;
+  font-family: "PFDinDisplayPro", Arial, sans-serif;
+  line-height: 1.55;
+  font-weight: 500;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+}
+
+.AgeGroups__list-item__info {
+  color: #030303;
+  font-size: 16px;
+  font-family: "PFDinDisplayPro", Arial, sans-serif;
+  line-height: 1.4;
+  font-weight: 400;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+}
+
+.AgeGroups__list-item__btn {
+  color: #666666;
+  font-size: 15px;
+  font-family: "PFDinDisplayPro", Arial, sans-serif;
+  line-height: 1.55;
+  font-weight: 500;
+  border-radius: 30px;
+  padding: 8px 32px;
+  background-color: #ffd302;
+  background-position: center center;
+  border-color: #ffd302;
+  border-style: solid;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
+    border-color 0.2s ease-in-out;
+  margin-top: 30px;
+}
+@media (max-width: 470px) {
+  .AgeGroups__heading {
+    font-size: 42px;
+    text-align: center;
+  }
+}

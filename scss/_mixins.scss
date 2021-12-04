@@ -1,0 +1,17 @@
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@mixin mwidth($mwidth) {
+  width: 100%;
+  max-width: $mwidth;
+}
+
+@mixin marbot($marbot) {
+  margin: 0;
+  margin-bottom: $marbot;
+}
+
+

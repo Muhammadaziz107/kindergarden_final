@@ -1,0 +1,318 @@
+.header {
+  margin: 0 auto;
+}
+
+.header__top {
+  display: flex;
+  align-items: center;
+  padding: 35px 0px;
+  justify-content: space-between;
+}
+
+.header__list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.header__list__item + .header__list__item {
+  margin-left: 15px;
+}
+
+.header__header-info {
+  font-family: "PFDinDisplayPro", Arial, sans-serif;
+  color: #666666;
+  width: 249px;
+  font-size: 17px;
+  margin-left: 15px;
+  font-weight: normal;
+}
+
+.header__list__item:last-child {
+  font-family: "PFDinDisplayPro", Arial, sans-serif;
+  margin-left: 60px;
+  font-size: 19px;
+}
+.header__list__item:last-child a {
+  text-decoration: none;
+  color: #22ace3;
+  font-weight: bold;
+}
+
+.send_application-btn {
+  color: #666666;
+  font-size: 17px;
+  font-family: "PFDinDisplayPro", Arial, sans-serif;
+  font-weight: 500;
+  border-color: transparent;
+  background-color: #ffd302;
+  text-decoration: none;
+  border-radius: 30px;
+  border-width: 1px;
+  padding: 12px 25px;
+}
+.header_logo {
+  padding-top: 10px;
+}
+
+.header-bottom {
+  background-color: #22ace3;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header-bottom__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 30px 0px;
+  list-style-type: none;
+}
+
+.header-bottom__list__item {
+  padding: 0 15px;
+  font-size: 16px;
+  font-family: "PFDinDisplayPro", Arial, sans-serif;
+  text-transform: uppercase;
+}
+.header-bottom__list__item a {
+  text-decoration: none;
+  color: white;
+}
+
+// === === === === === === === Nurulloh
+
+.header__modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  background-color: rgba(51, 51, 51, 0.555);
+}
+
+.modal--active .header__modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  animation-name: modal_opacity;
+  animation-duration: 0.3s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+@keyframes modal {
+  0% {
+    transform: translateY(400px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    width: 550px;
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes modal_opacity {
+  0% {
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.header__form-wrapper {
+  width: 400px;
+  // max-width: 550px;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  opacity: 0;
+  transform: translateY(400px);
+  animation-name: modal;
+  animation-duration: 0.4s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+.header__modal-form {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+  input,
+  select {
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px 20px;
+    outline: none;
+    color: #666666;
+    border: 1px solid #c9c9c9;
+    font-size: 16px;
+    line-height: 1.33;
+    font-family: "PFDinDisplayPro", Arial, sans-serif;
+    border-radius: 30px;
+    border: 1px solid #c9c9c9;
+  }
+
+  select {
+    color: #444;
+  }
+}
+
+.header__form-heading {
+  margin-bottom: 20px;
+  font-size: 36px;
+  line-height: 1.23;
+  font-family: "PFDinDisplayPro", Arial, sans-serif;
+  font-weight: 600;
+  color: #22ace3;
+}
+
+.header__form-desc {
+  margin-bottom: 20px;
+  color: #666666;
+  font-size: 16px;
+  line-height: 1.55;
+  font-family: "PFDinDisplayPro", Arial, sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+
+.modal__name-input {
+  width: 100%;
+  padding: 15px 20px;
+  outline: none;
+  border-radius: 30px;
+  color: #666666;
+  border: 1px solid #c9c9c9;
+  font-size: 16px;
+  line-height: 1.33;
+  font-family: "PFDinDisplayPro", Arial, sans-serif;
+}
+
+.header__modal-submit {
+  width: 100%;
+  border: none;
+  margin: 10px 0;
+  padding: 20px;
+  border-radius: 30px;
+  background-color: #ffd302;
+  font-family: "PFDinDisplayPro", Arial, sans-serif;
+  color: #666666;
+  font-weight: 600;
+}
+
+.header__form-note {
+  font-size: 13px;
+  text-align: center;
+}
+
+.personal-data-link {
+  color: #00a9e3;
+  text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+  .send_application-btn {
+    position: absolute;
+    right: 122px;
+    top: 80px;
+  }
+  .header__list {
+    margin-left: 0px;
+    margin-right: 100px;
+  }
+  .header__list__item:last-child {
+    margin-bottom: 50px;
+  }
+  .header_logo {
+    padding-top: 0;
+    position: absolute;
+    left: 125px;
+    top: 52px;
+  }
+  .header__header-info {
+    margin: 0 auto;
+    box-sizing: content-box;
+    width: 235px;
+    padding-left: 20%;
+  }
+}
+@media (max-width: 1190px) {
+  .header__header-info {
+    padding-left: 25%;
+  }
+}
+@media only screen and (max-width: 1150px) {
+  .header__list {
+    margin-left: 0;
+  }
+  .header__header-info {
+    padding-left: 29%;
+  }
+
+  // .header__list__item:last-child {
+  //   display: block;
+  //   width: 100%;
+  // }
+}
+@media (max-width: 1120px) {
+  .header__list {
+    margin-left: 0px;
+    margin-right: 50px;
+  }
+  .send_application-btn {
+    right: 72px;
+  }
+  .header_logo {
+    left: 75px;
+  }
+  .header__header-info {
+    padding-left: 25%;
+  }
+}
+@media (max-width: 1070px) {
+  .header__header-info {
+    padding-left: 27%;
+  }
+}
+@media (max-width: 1015px) {
+  .header__list {
+    margin-left: 0px;
+    margin-right: 30px;
+  }
+  .send_application-btn {
+    right: 52px;
+  }
+  .header_logo {
+    left: 50px;
+  }
+  .header__header-info {
+    padding-left: 25%;
+  }
+}
+@media (max-width: 990px) {
+  .header__top {
+    display: none;
+  }
+}

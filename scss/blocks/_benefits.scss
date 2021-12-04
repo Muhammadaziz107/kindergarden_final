@@ -1,0 +1,119 @@
+.benefits {
+  margin: 20px 0 20px 0;
+}
+.benefits__heading {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  color: #22ace3;
+  font-size: 52px;
+  font-family: "PFDinDisplayPro", Arial, sans-serif;
+  line-height: 1.55;
+  font-weight: 600;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+}
+.benefits__list-item {
+  width: 100%;
+  max-width: 1160px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.benefits__list-item-right-heading {
+  color: #22ace3;
+  font-size: 28px;
+  font-family: "PFDinDisplayPro", Arial, sans-serif;
+  line-height: 1.55;
+  font-weight: 600;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+}
+.benefits__list-item__infos {
+  list-style-type: none;
+}
+
+.yellow-cicrle {
+  height: 8px;
+  width: 8px;
+  background-color: #ffd302;
+  margin-right: 5px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.benefits__list-item-infos-item {
+  color: #666666;
+  font-size: 16px;
+  font-family: "PFDinDisplayPro", Arial, sans-serif;
+  line-height: 1.9;
+  font-weight: 400;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+}
+
+.benefits__list-item-left {
+  margin: 0 20px;
+}
+
+.benefits__list {
+  padding: 0 20px;
+}
+@media (max-width: 470px) {
+  .benefits__heading {
+    font-size: 42px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .benefits__list-item {
+    display: flex;
+    flex-direction: column;
+    margin: 0 100px;
+  }
+
+  .benefits__list-item:nth-child(2n) {
+    order: 2;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .benefits__list-item {
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .benefits__list-item {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+  }
+
+  .benefits__list-item-left img {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .benefits__heading {
+    font-size: 30px;
+  }
+  .benefits__list-item {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+  }
+
+  .benefits__list-item-left img {
+    width: 300px;
+  }
+}

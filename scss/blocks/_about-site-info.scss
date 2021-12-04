@@ -1,0 +1,25 @@
+.about-site-info {
+  background-color: #f4fbfe;
+  padding: 50px 0;
+}
+.about-site-info__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  list-style-type: none;
+}
+.about-site-info__list__item img {
+  margin: 20px 50px;
+}
+.about-site-info__list__item__text {
+  width: 320px;
+  color: #666666;
+  font-size: 21px;
+  font-family: "PFDinDisplayPro", Arial, sans-serif;
+  font-weight: 400;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+  text-align: center;
+}

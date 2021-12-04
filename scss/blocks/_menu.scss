@@ -1,0 +1,49 @@
+.hamburger {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: none;
+}
+#menu {
+  position: fixed;
+  transition: 0.1s;
+  top: 0;
+  right: 0;
+  background: #22ace3;
+  padding: 0px;
+  width: 0px;
+  height: 100vh;
+  z-index: 30;
+}
+
+.menu_item {
+  margin-bottom: 15px;
+  list-style: none;
+}
+.menu_link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-family: "PFDinDisplayPro", Arial, sans-serif;
+}
+.closed-icon {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
+.closed {
+  text-align: right;
+}
+
+@media (max-width: 990px) {
+  .hamburger {
+    display: inline-block;
+    z-index: 30;
+  }
+  .header-bottom {
+    display: none;
+  }
+}

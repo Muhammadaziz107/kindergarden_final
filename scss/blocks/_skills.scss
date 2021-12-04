@@ -1,0 +1,134 @@
+.skills-sections {
+  width: 100%;
+  max-width: 100%;
+  background-color: #f0f7fa;
+  padding-bottom: 60px;
+}
+
+.skills-sections .container {
+  // text-align: center;
+}
+
+.skills__heading {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #22ace3;
+  font-size: 52px;
+  font-family: "PFDinDisplayPro", Arial, sans-serif;
+  line-height: 1.55;
+  font-weight: 600;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+}
+
+.skills__description {
+  margin-bottom: 40px;
+  color: #666666;
+  font-size: 20px;
+  font-family: "PFDinDisplayPro", Arial, sans-serif;
+  line-height: 1.55;
+  font-weight: 400;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+  text-align: center;
+}
+
+.skills__list {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.skills__list-card {
+  width: 100%;
+  max-width: 260px;
+  margin: 10px 10px;
+}
+
+.skills__card-img {
+  width: 100%;
+  margin-bottom: 20px;
+  border-top-right-radius: 40px;
+}
+
+.skills__card-heading {
+  color: #22ace3;
+  font-size: 28px;
+  font-family: "PFDinDisplayPro", Arial, sans-serif;
+  line-height: 1.55;
+  font-weight: 600;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+}
+
+.skills__directions-list {
+  list-style: none;
+}
+
+.skills__direction {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  color: #666;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+.direction__circle {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: #ffd302;
+}
+
+.choose-lesson-wrapper {
+  text-align: center;
+}
+
+.choose-lesson {
+  display: inline-block;
+  padding: 15px 40px;
+  background-color: #ffd302;
+  color: #666;
+  font-size: 17px;
+  font-family: sans-serif;
+  line-height: 1.5;
+  font-weight: 500;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .skills__list-card {
+    max-width: 200px;
+  }
+  .skills__heading {
+    font-size: 40px;
+  }
+  .skills__description {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .skills__list {
+    justify-content: center;
+  }
+  .skills__list-card {
+    max-width: 320px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .skills__heading {
+    font-size: 32px;
+  }
+}
